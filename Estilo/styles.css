@@ -1,0 +1,277 @@
+@import url('https://fonts.cdnfonts.com/css/zb-zanutura');
+@import url('https://fonts.cdnfonts.com/css/noto-sans-tagbanwa');
+
+body{
+    background-color: rgb(199, 197, 197);
+}
+/* Reset de estilos básicos */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.nome h3{
+    font-family: 'Noto Sans Tagbanwa', sans-serif;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-family: 'Noto Sans Tagbanwa', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos para o conteúdo */
+.servico {
+    text-align: center;
+    padding: 40px;
+}
+
+.servico h1 {
+    font-family: 'ZB Zanutura', sans-serif;                             
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.servico p{
+    font-family: 'ZB Zanutura', sans-serif;
+    font-size: 20px;         
+}
+
+.servico img{
+    max-width: 100%;
+    height: auto;
+    width: 700px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 5px;
+    background-color: #333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .contato, footer .redes-sociais {
+    margin-bottom: 20px;
+    font-family: 'Noto Sans Tagbanwa', sans-serif;
+}
+
+footer h3 {
+    font-family: 'Noto Sans Tagbanwa', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-family: 'Noto Sans Tagbanwa', sans-serif;
+}
+.conteudo{
+    overflow: hidden;
+}
+.texto {
+    font-family: 'ZB Zanutura', sans-serif;   
+    float: left;
+    width: 50%;
+}
+
+.texto h1{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px;
+}
+.texto p{
+    font-size: 20px;
+    margin: 20px;
+}
+.imagem{
+    float: left; 
+    width: 50%; 
+    text-align: center;
+}
+.imagem img{
+    max-width: 100%;
+    height: auto;
+    width: 750px;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #333;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.buttonnav {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button:hover {
+    color: #e8e8e8;
+    cursor: pointer;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+   .imagem_sobre{
+    text-align: center;
+    padding: 40px;
+   }
+
+   .imagem_sobre img{
+    max-width: 100%;
+    height: auto;
+    width: 350px;
+    background-color: #333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+   }
+   .textosobre {
+    font-family: 'ZB Zanutura', sans-serif; 
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 2.5em;
+    border-radius: 25px;
+    transition: .4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 2px 2px;
+    margin-right: 35%;
+    margin-left: 35%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+  
+  .form:hover {
+    transform: translateX(-0.5em) translateY(-0.5em);
+    border: 1px solid #171717;
+    box-shadow: 10px 10px 0px #666666;
+  }
+  
+  .heading {
+    color: black;
+    padding-bottom: 2em;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'ZB Zanutura', sans-serif;
+  }
+  
+  .input {
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    outline: none;
+    padding: 0.7em;
+    transition: .4s ease-in-out;
+    font-family: 'ZB Zanutura', sans-serif;
+  }
+  .input:hover {
+    box-shadow: 6px 6px 0px #969696,
+               -3px -3px 10px #ffffff;
+  }
+  
+  .input:focus {
+    background: #ffffff;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  }
+  
+  .form .btn {
+    margin-top: 2em;
+    align-self: center;
+    padding: 0.7em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    transition: .4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+    font-family: 'ZB Zanutura', sans-serif;
+  }
+  
+  .form .btn:hover {
+    box-shadow: 6px 6px 0px #969696,
+               -3px -3px 10px #ffffff;
+    transform: translateX(-0.5em) translateY(-0.5em);
+  }
+  
+  .form .btn:active {
+    transition: .2s;
+    transform: translateX(0em) translateY(0em);
+    box-shadow: none;
+  }
+
+  @media (max-width: 768px){
+    .texto{
+        width: 100%;
+    }
+    .imagem{
+        width: 100%;
+    }
+    .textosobre{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+  }
